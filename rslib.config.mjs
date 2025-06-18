@@ -1,13 +1,22 @@
-import { defineConfig } from '@rslib/core';
+import {defineConfig} from '@rslib/core';
 
 export default defineConfig({
-  lib: [
-    {
-      format: 'umd',
-      umdName: 'Foo',
+    lib: [
+        {
+            format: 'umd',
+            umdName: 'Foo',
+        },
+    ],
+    output: {
+        target: 'web',
     },
-  ],
-  output: {
-    target: 'web',
-  },
+    tools: {
+        rspack: {
+            output: {
+                library: {
+                    export: 'default',
+                },
+            },
+        },
+    },
 });

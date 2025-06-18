@@ -17,18 +17,7 @@
         (()=>{
             __webpack_require__.o = (obj, prop)=>Object.prototype.hasOwnProperty.call(obj, prop);
         })();
-        (()=>{
-            __webpack_require__.r = (exports1)=>{
-                if ('undefined' != typeof Symbol && Symbol.toStringTag) Object.defineProperty(exports1, Symbol.toStringTag, {
-                    value: 'Module'
-                });
-                Object.defineProperty(exports1, '__esModule', {
-                    value: true
-                });
-            };
-        })();
         var __webpack_exports__ = {};
-        __webpack_require__.r(__webpack_exports__);
         __webpack_require__.d(__webpack_exports__, {
             default: ()=>Foo
         });
@@ -37,5 +26,6 @@
                 return 'hello';
             }
         }
+        __webpack_exports__ = __webpack_exports__["default"];
         return __webpack_exports__;
     })());
